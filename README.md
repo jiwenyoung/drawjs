@@ -125,7 +125,7 @@ API Document is on the way, and you could understand it by reading the code sinc
 
       const rect = Object.create(draw.rect).make();
 
-    __create方法在设置完形状参数后最后调用，实际将形状画在画布上__
+    __create方法在设置完形状参数后最后调用，实际将形状画在画布上。可以给这个方法传入fill或者stroke，分别代表填充或者描边__
 
     * position  矩形左上角的坐标, 参数是{x:x,y:y}这样的坐标对象
     * size 矩形的尺寸，参数是{width : width , height:height}这样的尺寸对象
