@@ -131,6 +131,9 @@ API Document is on the way, and you could understand it by reading the code sinc
     * size 矩形的尺寸，参数是{width : width , height:height}这样的尺寸对象
 
 * 圆角矩形
+     * position  矩形左上角的坐标, 参数是{ x:x , y:y }这样的坐标对象
+     * size 矩形的尺寸，参数是{width : width , height : height}这样的尺寸对象
+     * radial 设置圆角半径
 
 * 弧形与圆形
 
