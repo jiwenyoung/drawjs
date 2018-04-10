@@ -180,6 +180,9 @@ API Document is on the way, and you could understand it by reading the code sinc
     * point 设置三角形的顶点，参数是坐标对象，这个方法需要被调用3次。
 
 * 多边形
+    * position  多边形中心的位置，参数是坐标对象
+    * side  设置有几条边
+    * radial  设置多边形的 “ 半径 ”
 
 * 梯形
 
