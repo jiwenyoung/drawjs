@@ -58,7 +58,8 @@ API Document is on the way, and you could understand it by reading the code sinc
    + getCanvas 返回canvas对象
    + color 设置要创建的图形的填充颜色，参数是CSS颜色字符串
    + gradient 设置渐变样式，参数是一个对象，如下
-                {
+
+               {
                     type  : "liner",    线性渐变
                     start : [ x , y ]   起始点
                     end   : [ x , y ]   终点
@@ -71,25 +72,29 @@ API Document is on the way, and you could understand it by reading the code sinc
                     stop  : [ {position , color},{},{} ... ]   渐变位置和颜色
                 }
    + pattern设置填充图案，参数是一个对象
-   +            {
+   
+                {
                     src          图片的路径
                     repeat       重复方式，可选repeat,no-repeat,repeat-x,repeat-y
                  }
                 这个方法是异步的，需要用 async / await 调用
    + border设置描边的样式，参数如下
-   +            {
+
+                {
                     width    描边线宽度
                     color    描边颜色，CSS表达式
                 }
    + shadow 设置阴影，参数是一个对象，如下
-   +            {
+
+                {
                     blur   高斯模糊系数
                     color  投影颜色
                     offsetX  X轴偏移
                     offsetY  Y轴偏移   
                 }
     + compose 设置后画的图形与先画的图形的合成方式，参数是一个字符串
-    +           "source-over",	      //后绘制的图形在先绘制的图形的上方，默认。
+    
+               "source-over",	      //后绘制的图形在先绘制的图形的上方，默认。
                 "source-in",	      //后绘制的图形与先绘制的图形重叠的部分可见，其他部分透明。
                 "source-out",	      //后绘制的图形与先绘制的图形不重叠的部分可见，先绘制的图形透明。
                 "source-atop",	      //后绘制的图形与先绘制的图形重叠的部分可见，先绘制的图形不受影响。
