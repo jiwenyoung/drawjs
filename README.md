@@ -120,7 +120,7 @@ API Document is on the way, and you could understand it by reading the code sinc
     * scale       缩放坐标系，参数是缩放系数
 
 * 矩形
-    + （未完待续）
+    * 未完待续
 
 * 圆角矩形
 
