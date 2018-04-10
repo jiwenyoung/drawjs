@@ -177,6 +177,7 @@ API Document is on the way, and you could understand it by reading the code sinc
     * control 控制点坐标，参数是坐标对象，调用一次是二次方曲线，调用两次是三次方曲线
 
 * 三角形
+    * point 设置三角形的顶点，参数是坐标对象，这个方法需要被调用3次。
 
 * 多边形
 
