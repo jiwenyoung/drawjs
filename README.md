@@ -153,7 +153,8 @@ API Document is on the way, and you could understand it by reading the code sinc
     * radial  指定半径，默认半径是10px
 
 * 线段 （对象：draw.line）
-    * dash  设置虚线，参数是一个表示虚线间距的数组
+
+    * dash 设置虚线，参数是一个表示虚线间距的数组
     * cap  设置线段端点样式
           
           参数有三个选项，butt,square,round
