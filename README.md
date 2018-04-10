@@ -153,8 +153,7 @@ API Document is on the way, and you could understand it by reading the code sinc
     * radial  指定半径，默认半径是10px
 
 * 线段 （对象：draw.line）
-
-    * dash 设置虚线，参数是一个表示虚线间距的数组
+    * dash  设置虚线，参数是一个表示虚线间距的数组
     * cap  设置线段端点样式
           
           参数有三个选项，butt,square,round
@@ -169,7 +168,7 @@ API Document is on the way, and you could understand it by reading the code sinc
           bevel  斜切连接
           miter  直接连接 （默认值）
     * limit 在miter连接的情况下，limit用来限制斜接线的长度，如果超过了这个值，就用bevel连接，默认为10
-    * move 移动到某个坐标上，也就是画线的起始位置 , 参数是一个包含x,y的坐标对象
+    * move 移动到某个坐标上，也就是画线的起始位置,参数是一个包含x,y的坐标对象
     * mark 从起始位置向目标位置画线 , 参数是目标位置的坐标对象，包括x,y属性。这个方法可以连续多次被调用，以便连续画折线或者其他各种形状。
 
 * 贝塞尔曲线 （对象：draw.cruve）
