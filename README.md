@@ -24,7 +24,7 @@ API Document is on the way, and you could understand it by reading the code sinc
 以下是个例子 / Below is an example of usage  
   
         //Draw a red star in the center of canvas 
-        //在画布中心画个红色五角星
+
         draw.init("canvas");
         const star = Object.create(draw.star).make();
         star.color("red")
