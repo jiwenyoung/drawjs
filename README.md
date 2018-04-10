@@ -21,14 +21,14 @@ All the code is written in ES6+ , and if you want to use it, you would better co
 API Document is on the way, and you could understand it by reading the code since it is not long and complicated. comments might be helpful.
 
 
-以下是个例子 / Below is an example of usage  
-  
-        //Draw a red star in the center of canvas 
+以下是个例子，在画布中心画个红色五角星  Below is an example, draw a red star at center
 
-        draw.init("canvas");
-        const star = Object.create(draw.star).make();
+        draw.init("canvas");
+        let star = Object.create(draw.star).make();
         star.color("red")
             .position({ x: canvas.width / 2  , y : canvas.height / 2 })
             .radial({outer : 200, inner : 100})
             .points(5)
             .create()
+
+
