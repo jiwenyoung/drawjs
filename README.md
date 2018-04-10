@@ -31,7 +31,7 @@ API Document is on the way, and you could understand it by reading the code sinc
             .points(5)
             .create()
 
-##使用说明：
+## 使用说明：
 >首先通过
     ```javascript
     <script src="./draw.js"></script>
@@ -49,7 +49,7 @@ API Document is on the way, and you could understand it by reading the code sinc
         .create()
     ```    
 
-##下面是具体的API
+## 下面是具体的API
 
 * 通用方法
    + init 初始化，传入的参数是canvas元素的DOM ID，这个方法的返回值是context上下文
@@ -58,7 +58,7 @@ API Document is on the way, and you could understand it by reading the code sinc
    + getCanvas 返回canvas对象
    + color 设置要创建的图形的填充颜色，参数是CSS颜色字符串
    + gradient 设置渐变样式，参数是一个对象，如下
-   +            {
+                {
                     type  : "liner",    线性渐变
                     start : [ x , y ]   起始点
                     end   : [ x , y ]   终点
