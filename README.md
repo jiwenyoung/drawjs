@@ -137,6 +137,21 @@ API Document is on the way, and you could understand it by reading the code sinc
 
 * 弧形与圆形
 
+    __弧形和圆形有两种方法，一种是指定圆心和半径，另一种是指定起点、终点和半径__
+
+    __以下是第一种方法__
+
+    * position 指定圆心位置，参数是{ x : x , y : y }这样的坐标对象
+    * size 指定半径，参数是半径
+    * angle 旋转的角度，画圆形是360度
+    * direction  旋转的方向，顺时针还是逆时针，参数是布尔值，true是顺时针  
+
+    __以下是第二种方法__
+
+    * from  指定起点，参数是坐标对象
+    * to 指定终点，参数是坐标对象
+    * radial  指定半径，默认半径是10px
+
 * 线段
 
 * 贝塞尔曲线
