@@ -24,7 +24,7 @@ API Document is on the way, and you could understand it by reading the code sinc
 以下是个例子，在画布中心画个红色五角星  Below is an example, draw a red star at center
         
         
-        ```js
+        ```
         draw.init("canvas");
         let star = Object.create(draw.star).make();
         star.color("red")
