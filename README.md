@@ -7,7 +7,7 @@
 
 所有代码都是用ES6+写的，你可以用babel把它编译成ES5，并用uglify.js压缩它。
 
-API文档还在路上，但是你可以通过阅读源码理解它的用它，因为它不是很长，也很简单。注释也许会有帮助
+你可以通过阅读源码理解它的用它，因为它不是很长，也很简单。注释也许会有帮助
 
 
 This is an object mapping of canvas API
@@ -18,7 +18,7 @@ So, I make this library in the manner of object orientation, and wish to make ca
 
 All the code is written in ES6+ , and if you want to use it, you would better complie it to ES5 by Babel , and compress it through uglify.js.
 
-API Document is on the way, and you could understand it by reading the code since it is not long and complicated. comments might be helpful.
+You could understand it by reading the code since it is not long and complicated. comments might be helpful.
 
 
 以下是个例子，在画布中心画个红色五角星  Below is an example, draw a red star at center
