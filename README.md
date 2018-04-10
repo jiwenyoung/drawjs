@@ -101,10 +101,10 @@ API Document is on the way, and you could understand it by reading the code sinc
                 "source-in",	      //后绘制的图形与先绘制的图形重叠的部分可见，其他部分透明。
                 "source-out",	      //后绘制的图形与先绘制的图形不重叠的部分可见，先绘制的图形透明。
                 "source-atop",	      //后绘制的图形与先绘制的图形重叠的部分可见，先绘制的图形不受影响。
-                "destination-over",   //后绘制的图形在先绘制的图形的下方，只有先绘制的图形的透明下的部分才可见。
-                "destination-in",     //后绘制的图形在先绘制的图形的下方，不重叠的部分透明。
-                "destination-out",    //后绘制的图形擦除先绘制图形的重叠部分。
-                "destination-atop",   //后绘制的图形在先绘制的图形的下方，不重叠的部分，先绘制的图形透明。
+                "destination-over",       //后绘制的图形在先绘制的图形的下方，只有先绘制的图形的透明下的部分才可见。
+                "destination-in",         //后绘制的图形在先绘制的图形的下方，不重叠的部分透明。
+                "destination-out",        //后绘制的图形擦除先绘制图形的重叠部分。
+                "destination-atop",       //后绘制的图形在先绘制的图形的下方，不重叠的部分，先绘制的图形透明。
                 "lighter",	      //后绘制的图形与先绘制的图形的重叠部分值相加，即变亮。
                 "copy",	              //后绘制的图形完全代替先绘制的图形的重叠部分。
                 "xor"	              //后绘制的图形与先绘制的图形在重叠部分执行“异或”操作。 
