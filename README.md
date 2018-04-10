@@ -111,7 +111,13 @@ API Document is on the way, and you could understand it by reading the code sinc
     + clip 使用当前路径作为剪辑区域
 
 * 坐标
-    * （未写完待续）
+
+  __coordinate对象是静态对象，直接在draw对象上调用__
+
+    * windowToCanvas 将窗口坐标系转换为画布坐标系，接受x,y两个参数，分别是要转换的窗口坐标系的x,y点
+    * rotate      旋转坐标系，参数是角度
+    * translate   平移坐标系，参数是一个`{x:x,y:y}`的对象
+    * scale       缩放坐标系，参数是缩放系数
 
 * 矩形
 
