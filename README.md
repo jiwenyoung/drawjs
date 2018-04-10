@@ -23,7 +23,7 @@ API Document is on the way, and you could understand it by reading the code sinc
 
 以下是个例子，在画布中心画个红色五角星  Below is an example, draw a red star at center
         
-                
+         `       
         draw.init("canvas");
         let star = Object.create(draw.star).make();
         star.color("red")
@@ -31,7 +31,7 @@ API Document is on the way, and you could understand it by reading the code sinc
             .radial({outer : 200, inner : 100})
             .points(5)
             .create()
-        
+        `
         
 ## 使用说明：
 >首先通过
