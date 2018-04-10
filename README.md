@@ -120,7 +120,15 @@ API Document is on the way, and you could understand it by reading the code sinc
     * scale       缩放坐标系，参数是缩放系数
 
 * 矩形
-    * 未完待续
+
+    __每个形状的make方法用来在实例化形状的时候初始化内部变量，是必须调用的，如下__
+
+      const rect = Object.create(draw.rect).make();
+
+    __create方法在设置完形状参数后最后调用，实际将形状画在画布上__
+
+    * position  矩形左上角的坐标, 参数是{x:x,y:y}这样的坐标对象
+    * size 矩形的尺寸，参数是{width : width , height:height}这样的尺寸对象
 
 * 圆角矩形
 
