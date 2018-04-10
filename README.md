@@ -22,40 +22,32 @@ API Document is on the way, and you could understand it by reading the code sinc
 
 
 以下是个例子，在画布中心画个红色五角星  Below is an example, draw a red star at center
-        
-         `       
-        draw.init("canvas");
-        let star = Object.create(draw.star).make();
-        star.color("red")
-            .position({ x: canvas.width / 2  , y : canvas.height / 2 })
-            .radial({outer : 200, inner : 100})
-            .points(5)
-            .create()
-        `
+     
+    draw.init("canvas");
+    let star = Object.create(draw.star).make();
+    star.color("red")
+        .position({ x: canvas.width / 2  , y : canvas.height / 2 })
+        .radial({outer : 200, inner : 100})
+        .points(5)
+        .create()
         
 ## 使用说明：
 >首先通过
 
-    ```javascript
     <script src="./draw.js"></script>
-    ```
     
 >引用这个库, 这时候在全局上下文暴露了一个draw对象，之后的所有操作都来自这个对象。
 >比如需要画一个方形，首先创建一个新的方形对象。 
     
-    ```javascript
     const rect = Object.create(draw.rect).make()
-    ```
     
 >然后在这个方形对象上调用各种设置方法，最后用create方法把它画出来。
     
-    ```javascript
     rect.color("orange")
         .position({x:100,y:100})
         .size({width:200,height:200})
         .create()
-    ```    
-
+    
 
 ## 下面是具体的API
 
