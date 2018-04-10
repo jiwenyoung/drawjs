@@ -12,9 +12,7 @@ API Document is on the way, and you could understand it by reading the code sinc
 Below is an example of usage :
   
         //Draw a red star in the center of canvas
-        const context = draw.init("canvas");
-        const canvas = draw.getCanvas();
-  
+        draw.init("canvas");
         const star = Object.create(draw.star).make();
         star.color("red")
             .position({ x: canvas.width / 2  , y : canvas.height / 2 })
