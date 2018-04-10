@@ -52,6 +52,7 @@ API Document is on the way, and you could understand it by reading the code sinc
 ## 下面是具体的API
 
 * 通用方法
+    __init reset clean 和 getCanvas 方法直接在draw对象上调用，其他的放在在图形实例上调用__
    + init 初始化，传入的参数是canvas元素的DOM ID，这个方法的返回值是context上下文
    + reset 重置所有样式
    + clean 清空画布
