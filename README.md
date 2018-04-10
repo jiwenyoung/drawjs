@@ -171,20 +171,23 @@ API Document is on the way, and you could understand it by reading the code sinc
     * move 移动到某个坐标上，也就是画线的起始位置 , 参数是一个包含x,y的坐标对象
     * mark 从起始位置向目标位置画线 , 参数是目标位置的坐标对象，包括x,y属性。这个方法可以连续多次被调用，以便连续画折线或者其他各种形状。
 
-* 贝塞尔曲线
+* 贝塞尔曲线 （对象：draw.cruve）
     * start  起始点坐标，参数是坐标对象
     * end 结束点坐标，参数是坐标对象
     * control 控制点坐标，参数是坐标对象，调用一次是二次方曲线，调用两次是三次方曲线
 
-* 三角形
+* 三角形 （对象：draw.triangle）
     * point 设置三角形的顶点，参数是坐标对象，这个方法需要被调用3次。
 
-* 多边形
+* 多边形 （对象：draw.polygon）
     * position  多边形中心的位置，参数是坐标对象
     * side  设置有几条边
     * radial  设置多边形的 “ 半径 ”
 
-* 梯形
+* 梯形 （对象 ：draw.trapezium）
+    * position  梯形的中心的，参数是坐标对象
+    * height 梯形的高度
+    * width 梯形的宽度，参数是一个包含up和down的对象，分别代表梯形的上边长度和下边长度
 
 * 平行四边形
 
