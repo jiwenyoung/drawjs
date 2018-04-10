@@ -119,7 +119,7 @@ API Document is on the way, and you could understand it by reading the code sinc
     * translate   平移坐标系，参数是一个`{x:x,y:y}`的对象
     * scale       缩放坐标系，参数是缩放系数
 
-* 矩形
+* 矩形 (对象：draw.rect)
 
     __每个形状的make方法用来在实例化形状的时候初始化内部变量，是必须调用的，如下__
 
@@ -130,12 +130,12 @@ API Document is on the way, and you could understand it by reading the code sinc
     * position  矩形左上角的坐标, 参数是{ x:x , y:y }这样的坐标对象
     * size 矩形的尺寸，参数是{width : width , height : height}这样的尺寸对象
 
-* 圆角矩形
+* 圆角矩形  (对象：draw.roundRect)
      * position  矩形左上角的坐标, 参数是{ x:x , y:y }这样的坐标对象
      * size 矩形的尺寸，参数是{width : width , height : height}这样的尺寸对象
      * radial 设置圆角半径
 
-* 弧形与圆形
+* 弧形与圆形 (对象：draw.arc)
 
     __弧形和圆形有两种方法，一种是指定圆心和半径，另一种是指定起点、终点和半径__
 
@@ -152,8 +152,8 @@ API Document is on the way, and you could understand it by reading the code sinc
     * to 指定终点，参数是坐标对象
     * radial  指定半径，默认半径是10px
 
-* 线段
-    * dash  设置虚线，参数是一个表示虚线间距的数组
+* 线段 （对象：draw.line）
+    * dash  设置虚线，参数是一个表示虚线间距的数组
     * cap  设置线段端点样式
           
           参数有三个选项，butt,square,round
@@ -189,14 +189,41 @@ API Document is on the way, and you could understand it by reading the code sinc
     * height 梯形的高度
     * width 梯形的宽度，参数是一个包含up和down的对象，分别代表梯形的上边长度和下边长度
 
-* 平行四边形
+* 平行四边形 （对象：draw.parallelogram）
+    * position  形状的中心的，参数是坐标对象
+    * size 形状的尺寸，参数是一个包含width和height的对象
+    * angle 平行四边形的倾斜角度
 
-* 星形
+* 星形 （对象：draw.star）
+    * position 星形的中心的，参数是一个坐标对象
+    * points 有几个顶点，参数是顶点数
+    * radial 星型的半径，参数是由inner和outer组成的对象，这两个分别是星形内圆和外圆的半径
 
-* 网格
+* 网格 （对象：draw.grid)
+    * step 网格间距
+    * close 是否是封闭网格，参数是布尔值，当为true时，如果网格到画布边缘无法封口，便舍弃造成无法封口的那部分线段，制作一个封闭的网格
 
-* 文本
+* 文本 （对象：draw.text)
+    * position 插入文本的位置，参数是个坐标对象。
+    * write 要写入的文本内容
+    * align 和position指定的位置的对齐方式，可以选择start, center, end, left 和 right，分别是起始点、中心、结束点、左对齐和右对齐。
+    * baseline 基线对齐的方式，可选top, bottom, middle, alphabetic, ideographic 和 hanging，含义和CSS的规范相同
+    * style  字体样式，参考CSS 
+    * weight 字体粗细，参考CSS
+    * variant 字体变化，参考CSS
+    * size 字体大小，参考CSS
+    * family 字体，参考CSS
 
-* 图像
+* 图像 （对象：draw.image）
+    * src 图形路径
+    * position 图形插入位置，参数是坐标对象
+    * size 图形尺寸
+    * sourcePosition 当把原图像的一部分放入canvas时，截取原图像的位置，参数是坐标对象
+    * sourceSize 当把原图像的一部分放入canvas时，截取原图像的尺寸
+    * draw 把图形画在画布上
+    * get 返回图形的imageData对象
+    * put 这个方法在imageData对象上调用，将imageData对象画在canvas上，参数是一个坐标对象，表示画入的位置
 
-* 动画
+* 动画 （对象：draw.animate）
+    * fps 返回当前动画的帧频率
+    * interval 用于设置动画的速度，有两个参数，第一个是速度，单位ms，第二个是一个回调函数，可以在里面写入动画增量程序
