@@ -121,11 +121,11 @@ API Document is on the way, and you could understand it by reading the code sinc
 
 * 矩形
 
-    __每个形状的make方法用来在实例化形状的时候初始化内部变量，是必须调用的，如下__
+__每个形状的make方法用来在实例化形状的时候初始化内部变量，是必须调用的，如下__
 
-      const rect = Object.create(draw.rect).make();
+    const rect = Object.create(draw.rect).make();
 
-    __create方法在设置完形状参数后最后调用，实际将形状画在画布上。可以给这个方法传入fill或者stroke，分别代表填充或者描边__
+__create方法在设置完形状参数后最后调用，实际将形状画在画布上。可以给这个方法传入fill或者stroke，分别代表填充或者描边__
 
     * position  矩形左上角的坐标, 参数是{x:x,y:y}这样的坐标对象
     * size 矩形的尺寸，参数是{width : width , height:height}这样的尺寸对象
