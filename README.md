@@ -224,6 +224,8 @@ You could understand it by reading the code since it is not long and complicated
     * get 返回图形的imageData对象
     * put 这个方法在imageData对象上调用，将imageData对象画在canvas上，参数是一个坐标对象，表示画入的位置
 
-* 动画 （对象：draw.animate）
-    * fps 返回当前动画的帧频率
+* 动画 （对象：draw.animate） 
+
+    __这个对象的方法需要静态调用，不需要实例化__ 
+    * fps 返回当前动画的帧频率
     * interval 用于设置动画的速度，有两个参数，第一个是速度，单位ms，第二个是一个回调函数，可以在里面写入动画增量程序
